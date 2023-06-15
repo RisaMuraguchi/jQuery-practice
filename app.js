@@ -1,5 +1,10 @@
-// $(document).ready(function () {
-//   $("body").html("<h1>Hello jQuery!!</h1>");
-// });
+// グループセレクタ
+// $(".p2, #h2").css("color","red");
 
-$("p").css("color","red");
+// 子孫セレクタ
+// id=”div1”内にあるすべてのp要素の文字色を赤くする
+// $("#div1 p").css("color","red");
+
+// 属性セレクタ
+// h1要素で、id属性が”h2ではない”要素の文字色を赤くする
+// $("h1[id!='h2']").css("color","red");
