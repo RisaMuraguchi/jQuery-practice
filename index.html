@@ -6,7 +6,19 @@
     <title>jquery</title>
   </head>
   <body>
-    <div class="box1"></div>
+    <form id="form_sample1">
+      <div>
+        <label for="your_name">Name: </label><br>
+        <input type="text" name="your_name" id="your_name" value="" size="20">
+      </div>
+      <div>
+        <input type="button" value="値を取得" name="get_name" id="get_name" >
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+    <div id="jqs-1">
+      <p>値: <span></span></p>
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
   </body>
