@@ -16,8 +16,17 @@
   // });
 // });
 
-$(function() {
-  $(":button").click(function() {
-    $("#jqs-1 p span").text($(":text").val());
+// $(function() {
+  // ①「ボタンがクリックされたとき」に動作するイベント
+  // $(":button").click(function() {
+    // ②$("#jqs-1 p span")を$(":text").val()のテキストに書き換える
+    // $("#jqs-1 p span").text($(":text").val());
+  // });
+// });
+
+// thisはクリックされた要素を指す
+$(function(){
+  $('.box1').on('click',function(){
+    $(this).slideUp();
   });
 });
